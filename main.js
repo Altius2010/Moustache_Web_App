@@ -21,14 +21,14 @@ function modelLoaded() {
 
 function gotPoses(results) {
     if (results.length > 0) {
-        nose_x = results[0].pose.nose.x;
-        nose_y = results[0].pose.nose.y;
+        nose_x = results[0].pose.nose.x - 25;
+        nose_y = results[0].pose.nose.y + 5;
     }
 }
 
 function draw() {
     image(video, 0, 0, 300, 300);
-    image(moustache, nose_x - 25, nose_y + 5, 75, 50);
+    image(moustache, nose_x, nose_y, 75, 50);
 }
 
 function takeSnapshot() {
