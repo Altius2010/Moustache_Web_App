@@ -1,0 +1,37 @@
+body {
+    background: url("Moustache.png");
+    background-size: cover;
+}
+
+h3 {
+    font-size: 25px !important;
+}
+
+.btn-success:hover {
+    background-color: red;
+}
+
+canvas {
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    margin: 50px auto;
+}
+
+@keyframes example {
+    from {
+        box-shadow: 1px 1px 100px orangered;
+    }
+
+    40% {
+        box-shadow: 1px 1px 100px lightslategray;
+    }
+
+    80% {
+        box-shadow: 1px 1px 100px green;
+    }
+
+    to {
+        box-shadow: 1px 1px 100px orangered;
+    }
+}
